@@ -1,0 +1,19 @@
+minimum_cumulusci_version: '3.9.0'
+project:
+    name: Foo-Bank
+    package:
+        name:  Food-Bank
+        api_version: '48.0'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Foo-Bank/tests
+            options:
+                outputdir: robot/Foo-Bank/results
+
+    robot_testdoc:
+        options:
+            path: robot/Foo-Bank/tests
+            output: robot/Foo-Bank/doc/Foo-Bank_tests.html
